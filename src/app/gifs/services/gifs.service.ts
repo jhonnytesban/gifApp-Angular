@@ -12,11 +12,12 @@ export class GifsService {
   }
 
   buscarGifs(query: string): void {
-    if (this._historial.length >= 10) {
-      this._historial.pop()
+
+    query = query.trim().toLowerCase()
+
+    if (!this._historial.includes(query)) {
       this._historial.unshift(query)
-    } else {
-      this._historial.unshift(query)
+      this._historial = this._historial.slice(0, 10)
     }
   }
 

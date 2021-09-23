@@ -17,9 +17,12 @@ export class BusquedaComponent implements OnInit {
 
   buscar(): void {
     const valor: string = this.txtBuscar.nativeElement.value
-    // console.log(this.txtBuscar.nativeElement.value)
-    this.gifsService.buscarGifs(valor)
-    this.txtBuscar.nativeElement.value = ''
+    if (valor.trim().length === 0) {
+      alert('Los campos están vacíos')
+    } else {
+      this.gifsService.buscarGifs(valor)
+      this.txtBuscar.nativeElement.value = ''
+    }
   }
 
 }
