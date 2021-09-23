@@ -1,6 +1,7 @@
 .container{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(10rem, 15rem));
+  grid-auto-rows: min-content;
   gap: 1rem;
 }
 .img{
@@ -8,4 +9,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.card,
+.container-content{
+  height: fit-content;
+}
+.name{
+  text-align: center;
 }
