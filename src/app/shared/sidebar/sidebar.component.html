@@ -2,9 +2,6 @@
 <hr class="separator">
 <nav class="nav">
   <ul class="nav-menu">
-    <li class="menu__item"><a class="history" href="#">Historial</a></li>
-    <li class="menu__item"><a class="history" href="#">Historial</a></li>
-    <li class="menu__item"><a class="history" href="#">Historial</a></li>
-    <li class="menu__item"><a class="history" href="#">Historial</a></li>
+    <li *ngFor="let busqueda of historial" class="menu__item"><a class="history" href="#">{{busqueda}}</a></li>
   </ul>
 </nav>
