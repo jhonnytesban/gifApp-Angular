@@ -1,1 +1,7 @@
-<p>resultados works!</p>
+<div class="container">
+  <div *ngFor="let gif of gifsResult" class="card">
+    <div class="container-img">
+      <img class="img" [src]="gif.images.downsized_medium.url" [alt]="gif.title">
+    </div>
+  </div>
+</div>
