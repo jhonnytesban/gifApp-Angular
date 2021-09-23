@@ -1,0 +1,58 @@
+.container-app{
+  display: flex;
+}
+.sidebar{
+  width: 20%;
+  height: 100%;
+  min-height: 100vh;
+  /* padding: 1rem 0; */
+  background-color: #424242;
+  /* position: fixed; */
+}
+.title{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.separator{
+  margin-bottom: 1.5rem;
+}
+.nav-menu{
+  list-style: none;
+  padding: 0;
+}
+.menu__item{
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+.form{
+  margin-bottom: 1rem;
+}
+.history{
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  border-radius: .5rem;
+  padding: .6rem 4rem;
+}
+
+/* --- Fin de Sidebar --- */
+
+/* --- Comienzo de la App --- */
+.container{
+  width: 80%;
+  padding: 0 8rem 0 5rem;
+  box-sizing: border-box;
+}
+.subtitle{
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+.search{
+  width: 80%;
+  padding: .5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: .5rem;
+}
