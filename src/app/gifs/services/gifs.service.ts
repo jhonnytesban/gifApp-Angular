@@ -32,7 +32,6 @@ export class GifsService {
 
     this.http.get<SearchGifResponse>(`https://api.giphy.com/v1/gifs/search?api_key=${this.apiKey}&q=${query}&limit=10&`)
       .subscribe((res) => {
-        console.log(res.data)
         this.resultadosGifs = res.data
         localStorage.setItem('resultados', JSON.stringify(this.resultadosGifs))
       })
