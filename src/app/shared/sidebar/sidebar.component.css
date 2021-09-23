@@ -1,0 +1,25 @@
+.title{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.separator{
+  margin-bottom: 1.5rem;
+}
+.nav-menu{
+  list-style: none;
+  padding: 0;
+}
+.menu__item{
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+
+.history{
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  border-radius: .5rem;
+  padding: .6rem 4rem;
+}
